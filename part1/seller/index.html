@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar with Image</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rebeccapurple;
+            height: 50px; /* Adjust the height as needed */
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .right-corner {
+            float: right;
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 100%;
+            height: 600px;
+        }
+        .header-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: coral;">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Catalogue</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li class="right-corner"><a href="#">My Marketplace</a></li>
+    </ul>
+    <div class="header-image-container">
+        <img class="header-image" src="gettyimages-577674005.png" alt="Header Image">
+        <div class="header-text">Welcome to the TextBook  MarketPlace</div>
+    </div>
+    <div class="button-container">
+        <button>My Marketplace</button>
+        <button>View Catalogue</button>
+    </div>
+</body>
+</html>
